@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Solway:wght@300&display=swap');
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        color-scheme: dark;
+        font-family: 'Rowdies', cursive;
+        font-family: 'Solway', serif;
+        text-decoration: none;
+        color: white;
+        
+}
+.hidden{
+  transform: translateY(-100%);
+}
+body{
+  background-color: rgb(6,6,6);
+  border: solid 1px white;
+  overflow-x: hidden;
+  background-image: url(https://r4.wallpaperflare.com/wallpaper/344/20/1/abstract-black-white-solar-system-space-hd-wallpaper-8b96ecdd03011fb975042ba94d9c4c50.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 5%;
+  backdrop-filter: blur(50px);
+  border-bottom: solid 1px white;
+  -webkit-text-stroke: 0.2px white;
+  position: fixed;
+  top: 0.5px;
+  left: 0.5px;
+  width: 100%;
+  /* border-radius: 25px; */
+  transition: 0.25s ease;
+  box-shadow: 0px 0px 15px 3px rgb(255, 255, 255, .3), inset 0px 0px 20px 3px rgb(255, 255, 255, .2); 
+}
+.begin a{
+  -webkit-text-stroke: 0.3px white;
+  font-size: large;
+}
+.midden li{
+  display: inline-block;
+  padding: 0px 20px;
+  
+}
+
+.midden{
+  display: flex;
+  justify-content: space-between;
+}
+
+.midden li a{
+  transition: all 0.1s ease 0s;
+  -webkit-text-stroke: 0.3px white;
+}
+
+.midden li a:hover{
+  font-size: large;
+  /* border: solid 1px white; */
+  padding: 5px 20px 7px 20px;
+}
+
+.navbar > .einde{
+  border-left: solid 1px white;
+  padding: 0 0 0 10px;
+}
+
+.einde > button{
+  position: fixed;
+}
+
+.input-search{
+  height: 2px;
+  width: 2px;
+  border-style: none;
+  padding:10px 10px 15px 6px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+  padding-right: 40px;
+  color:#fff;
+}
+.input-search::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.search:focus ~ .input-search{
+  width: 260px;;
+  position: relative;
+  left: 30px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  position: relative;
+  left: 30px;
+  width: 260px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow:0 0 30px rgba(255, 255, 255, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height .2s ease;
+  overflow: hidden;
+}
+
+.wrapper .form-box{
+  width: 100%;
+  padding: 40px;
+
+}
+
+
+
+.form-box h2{
+  font-size: 2em;
+  -webkit-text-stroke: 0.3px white;
+  text-align: center;
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid white;
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: white;
+  font-weight: 700;
+  pointer-events: none;
+  transition: all 0.3s ease; /* Voeg een overgang toe voor een soepele animatie */
+}
+
+/* Stijl voor het label wanneer de input focus heeft of gegevens bevat */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  padding: 0 35px 0 5px;
+}
+
+.remember-forgot{
+  font-size: .9em;
+  color: white;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input{
+  accent-color: white;
+  margin-right: 3px;
+}
+
+.remember-forgot a{
+  color: white;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.btn{
+  width: 100%;
+  height: 45px;
+  background-color:white ;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: black;
+  font-size: 1.1em;
+  font-weight: 1000;
+  -webkit-text-stroke:1px black;
+}
+
+.login-register{
+  font: .9em;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.wrapper .form-box.login{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.login-register p a:hover{
+
+  text-decoration: underline;
+}
+
+.wrapper .form-box.register{
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper.active{
+  height: 613px;
+  transform: translateY(50px);
+}
+
+.wrapper.active .form-box.login{
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.wrapper.active .form-box.register{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
